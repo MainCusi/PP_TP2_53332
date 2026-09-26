@@ -1,0 +1,22 @@
+package modelo;
+
+import java.io.Serializable;
+
+public class Sala implements Serializable {
+    private static final long serialVersionUID = 1L;
+
+    private int id;
+    private String nombre;
+
+    public Sala(int id, String nombre) {
+        this.id = id;
+        this.nombre = nombre;
+    }
+
+    public int getId() { return id; }
+    public String getNombre() { return nombre; }
+
+    public void mostrarDatos() {
+        System.out.println("Sala: " + nombre + " (ID: " + id + ")");
+    }
+}
